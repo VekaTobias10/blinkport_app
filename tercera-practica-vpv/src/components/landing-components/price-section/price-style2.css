@@ -1,0 +1,10 @@
+.container-main-cards{
+  margin: auto;
+  width: 85%;
+  display: flex;
+  height:100vh;
+}
+
+.card{
+ margin:3.5%;
+}
