@@ -1,13 +1,16 @@
 import './App.css';
-// import LandingPage from './pages/landing';
+import LandingPage from './pages/landing';
 import Header from './header/header'
+import React from 'react';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <LandingPage></LandingPage> */}
       <Header></Header>
+      <LandingPage></LandingPage>
+      
+    
     </div>
   );
 }
