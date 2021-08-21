@@ -1,5 +1,5 @@
 import "./style.css";
-import Line1 from '../../assets/img/Line1.png'
+import Line1 from '../../../assets/img/Line1.png'
 
 
 
