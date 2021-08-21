@@ -1,13 +1,13 @@
 import React from 'react';
-import PriceCardLanding from '../components/landing-components/price-section/price-section';
-import Header from '../header/header';
-import CarrouselContainer from '../components/carousel-container';
+import PriceCardLanding from '../components/price-component/price-section';
+import Header from '../components/header-component/header';
+import CarrouselContainer from '../components/carousel-component/carousel-container';
 
 function LandingPage (){
    return (
        <React.Fragment>
        <Header></Header>
-       <CarrouselContainer></CarrouselContainer>      
+       <CarrouselContainer></CarrouselContainer>    
        <PriceCardLanding></PriceCardLanding>
        </React.Fragment>
    );

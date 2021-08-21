@@ -1,5 +1,0 @@
-function ImageSection (){
-    return(
-
-    );
-}

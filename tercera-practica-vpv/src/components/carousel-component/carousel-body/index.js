@@ -1,9 +1,9 @@
-import lima from '../../assets/img-carousel/lima.png'
-import jordan from '../../assets/img-carousel/jordan.png'
-import newyork from '../../assets/img-carousel/newyork.png'
-import paris from '../../assets/img-carousel/paris.png'
-import riodejaneiro from '../../assets/img-carousel/riodejaneiro.png'
-import shanghai from '../../assets/img-carousel/shanghai.png'
+import lima from '../../../assets/img-carousel/lima.png'
+import jordan from '../../../assets/img-carousel/jordan.png'
+import newyork from '../../../assets/img-carousel/newyork.png'
+import paris from '../../../assets/img-carousel/paris.png'
+import riodejaneiro from '../../../assets/img-carousel/riodejaneiro.png'
+import shanghai from '../../../assets/img-carousel/shanghai.png'
 import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons'
 
 import "./style.css";
