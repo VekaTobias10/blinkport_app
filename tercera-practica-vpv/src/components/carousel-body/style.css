@@ -1,0 +1,67 @@
+.body_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    background-color: rgb(176, 209, 247);
+    height: 310px;
+    /* width: 100%; */
+}
+
+.left{
+    display: flex;
+    width: 5%;
+    height: 100%;
+    background-color:rgb(176, 209, 247);
+    align-items: center;
+    justify-content: center;
+    color: gainsboro;
+}
+
+.button{
+    border-radius: 60%;
+    border: none;
+    background-color: white;
+    color: grey;
+    height: 38px;
+    width: 35px;
+}
+
+.center{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    width: 5%;
+    height: 100%;
+    background-color:rgb(176, 209, 247);
+    align-items: center;
+    justify-content: center;
+    color: gainsboro;
+}
+
+
+.img_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px;
+    width: 215px;
+}
+
+.city_name{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    margin: 0px;
+}
+
+
+
+
+

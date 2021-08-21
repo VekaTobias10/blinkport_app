@@ -1,0 +1,36 @@
+.header-carousel_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 46px;
+    /* width: 100%; */
+    /* height: 310px; */
+    background-color: rgb(176, 209, 247);
+    margin-bottom: 64px;
+}
+
+.title_carousel{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0px 0px 16px 0px;
+}
+
+.line_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.line{
+    height: 1px;
+    margin-top: 42px;
+    margin-right: 20px;
+}
+
+.sub-titel_carrousel{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0px;
+}
