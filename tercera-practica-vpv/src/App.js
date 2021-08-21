@@ -1,5 +1,6 @@
 import './App.css';
 import CarrouselContainer from './components/carousel-container';
+import React from 'react';
 import LandingPage from './pages/landing';
 
 function App() {
