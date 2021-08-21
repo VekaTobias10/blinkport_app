@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles({
 
-  
+
     titleContainer: {
         display: 'flex',
         flexDirection: 'column',
@@ -27,13 +27,19 @@ export const useStyles = makeStyles({
     },
 
     // root de la card
-      root: {
-        height: '529px',
-        width: '300.8057861328125px',
+    root: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-Start',
+        padding: '2rem',
+        width: '314px',
+        height: '475px',
         left: '144px',
         top: '2460px',
-        borderRadius: '17.712053298950195px',
-        padding: '47px',
+        background: '#FFFFFF',
+        boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
+        borderRadius: '17.7121px',
+
     },
 
     media: {
