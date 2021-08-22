@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
-import LandingPage from './pages/landing';
+// import LandingPage from './pages/landing';
+import ModalPage from './pages/modal';
 
 
 
@@ -8,7 +9,11 @@ import LandingPage from './pages/landing';
 function App() {
   return (
     <div className="App">
-     <LandingPage></LandingPage>   
+
+    <ModalPage></ModalPage>     
+
+//      <LandingPage></LandingPage>   
+
     </div>
   );
 }
