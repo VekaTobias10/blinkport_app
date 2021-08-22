@@ -31,8 +31,8 @@ export const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-Start',
-        padding: '2rem',
-        width: '314px',
+        padding: '1.5rem',
+        width: '310px',
         height: '475px',
         left: '144px',
         top: '2460px',
@@ -54,6 +54,17 @@ export const useStyles = makeStyles({
         order: 0,
         flexGrow: 0,
         margin: '0px 8px',
+    },
+    buttonPrices:{
+        backgroundColor: "#BBDEFB",
+        color: "white",
+        borderRadius: "16px",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "8px",
+        width: '237.34px',
+        height: '51.96px',
+        margin: '0.8rem auto',
     },
 
 });

@@ -68,7 +68,7 @@ export default function PriceCardLanding() {
                   Small pets Included</div>
                 </Typography>
               </div>
-              <Button className="button-prices" variant="contained">
+              <Button className={classes.buttonPrices} variant="contained">
                 CHOOSE PLAN
               </Button>
             </CardContent>
@@ -105,7 +105,7 @@ export default function PriceCardLanding() {
                   Package Insurance</div>
                 </Typography>
               </div>
-              <Button className="button-prices" variant="contained">
+              <Button className={classes.buttonPrices} variant="contained">
                 CHOOSE PLAN
               </Button>
             </CardContent>
@@ -147,7 +147,7 @@ export default function PriceCardLanding() {
                 </Typography>
           
               </div>
-              <Button className="button-prices" variant="contained">
+              <Button className={classes.buttonPrices} variant="contained">
                 CHOOSE PLAN
               </Button>
             </CardContent>
