@@ -1,0 +1,54 @@
+.personal-data_bigcontainer{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-left: 150px;
+
+}
+
+.personal-data_input-titelcontainer{
+    width: 409px;
+    max-height: 300px;
+    margin-right: 50px;
+}
+
+.data_titel{
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: #9E9E9E;
+    margin-bottom: 7px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.input_container{
+    display: flex;
+}
+
+.check-box{
+    display: flex;
+    margin:4px 0px;
+   
+}
+
+.img_container{
+    width: 548px;
+    max-height: 450px;
+}
+
+.img{
+    max-height: 450px;
+}
+
+.text_check-box{
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    margin: 1px 0px;
+}
+
+
+
+
+
