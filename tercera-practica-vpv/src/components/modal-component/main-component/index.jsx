@@ -6,6 +6,7 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import PriceCardComponentStepper from '../../price-component-container/card-component-stepper/card-component-stepper';
+import PersonalData from '../../personal-data';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,7 +29,7 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return 'Select campaign settings...';
+      return <PersonalData></PersonalData>;
     case 1:
       return <PriceCardComponentStepper></PriceCardComponentStepper>;
     case 2:
