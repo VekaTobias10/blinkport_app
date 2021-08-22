@@ -5,11 +5,15 @@ import ModalPage from './pages/modal';
 
 
 
+
 function App() {
   return (
     <div className="App">
-     {/* <LandingPage></LandingPage>    */}
+
     <ModalPage></ModalPage>     
+
+//      <LandingPage></LandingPage>   
+
     </div>
   );
 }
