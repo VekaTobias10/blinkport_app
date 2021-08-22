@@ -5,7 +5,7 @@ export const useStyles = makeStyles({
     
     containerMainCards:{
             margin: 'auto',
-            width: '80%',
+            width: '78%',
             display: 'flex',
     },
 
@@ -35,8 +35,8 @@ export const useStyles = makeStyles({
     root: {
         flexDirection: 'column',
         alignItems: 'flex-Start',
-        width: '100%',
-        padding: '1rem',
+        width: '65%',
+        margin: '2rem',
         // left: '144px',
         // top: '2460px',
         background: '#FFFFFF',
