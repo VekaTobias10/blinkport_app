@@ -3,6 +3,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles({
 
+    containerMainCards: {
+        margin: 'auto',
+        width: '80%',
+        display: 'flex',
+    },
 
     titleContainer: {
         display: 'flex',
@@ -28,14 +33,12 @@ export const useStyles = makeStyles({
 
     // root de la card
     root: {
-        display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-Start',
         padding: '1.5rem',
-        width: '310px',
-        height: '475px',
-        left: '144px',
-        top: '2460px',
+        width: '322px',
+        // left: '144px',
+        // top: '2460px',
         background: '#FFFFFF',
         boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
         borderRadius: '17.7121px',
@@ -55,7 +58,7 @@ export const useStyles = makeStyles({
         flexGrow: 0,
         margin: '0px 8px',
     },
-    buttonPrices:{
+    buttonPrices: {
         backgroundColor: "#BBDEFB",
         color: "white",
         borderRadius: "16px",
@@ -66,5 +69,7 @@ export const useStyles = makeStyles({
         height: '51.96px',
         margin: '0.8rem auto',
     },
-
+    cardLanding:{
+        margin: '1rem',
+        }
 });
