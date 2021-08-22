@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import PriceCardComponentStepper from '../../price-component-container/card-component-stepper/card-component-stepper';
 import PersonalData from '../../personal-data';
+import PaymentCard from '../modal-tarjeta/modal-pago';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,7 +34,7 @@ function getStepContent(step) {
     case 1:
       return <PriceCardComponentStepper></PriceCardComponentStepper>;
     case 2:
-      return 'This is the bit I really care about!';
+      return <PaymentCard></PaymentCard>;
     default:
       return 'Unknown step';
   }
