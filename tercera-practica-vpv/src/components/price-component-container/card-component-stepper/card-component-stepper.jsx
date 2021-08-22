@@ -17,8 +17,9 @@ export default function PriceCardComponentStepper() {
     return (
       <React.Fragment>
       <div className={classes.containerMainCards}>
-      <div className={classes.card}>
+      {/* <div className={classes.card}> */}
         <Card className={classes.root}>
+        {/* <Card> */}
           <CardContent>
             <Typography variant="h4">Free</Typography>
             <Typography variant="h6">
@@ -56,9 +57,10 @@ export default function PriceCardComponentStepper() {
             </Button>
           </CardContent>
         </Card>
-      </div>
-      <div className={classes.card}>
+
+      {/* <div className={classes.card}> */}
         <Card className={classes.root}>
+        {/* <Card> */}
           <CardContent>
             <Typography variant="h4">Custom</Typography>
             <Typography variant="h6">
@@ -93,8 +95,8 @@ export default function PriceCardComponentStepper() {
             </Button>
           </CardContent>
         </Card>
-      </div>
-      <div className={classes.card}>
+       {/* <div className={classes.card}>  */}
+        {/* <Card> */}
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h4">Platinum</Typography>
@@ -128,16 +130,16 @@ export default function PriceCardComponentStepper() {
                 <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
                 Local Tourism Guide</div>
               </Typography>
-        
-            </div>
+                 </div>
             <Button className={classes.buttonPrices} variant="contained">
               CHOOSE PLAN
             </Button>
           </CardContent>
         </Card>
-      </div>
-      </div>
-      </React.Fragment>
+        </div>
+        {/* </div> */}
+        </React.Fragment>
+    
+      /* {/* </div> */
  );
-
 }
