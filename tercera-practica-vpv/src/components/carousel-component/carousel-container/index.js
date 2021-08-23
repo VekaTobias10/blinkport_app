@@ -4,11 +4,13 @@ import "./style.css";
 
 
 
+
 function CarrouselContainer() {
     return (
         <div className="carousel_container">
             <CarouselHeader></CarouselHeader>
             <CarouselBody></CarouselBody>
+
         </div>
 
     )
