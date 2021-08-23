@@ -1,6 +1,11 @@
 .container {
   display: flex;
-  width: 100%;
+  max-width: 1440px;
   flex-direction: row;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+  margin-left: 64px;
+  margin-bottom: 89px;
+  margin-right: 88px;
+  align-items: auto;
 }
