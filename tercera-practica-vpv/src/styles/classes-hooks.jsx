@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     padding: "24px 16px",
     width: "280px",
     height: "292px",
+    marginLeft: "48px",
   },
   textInside: {
     fontStyle: "normal",
