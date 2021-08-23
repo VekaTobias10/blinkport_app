@@ -65,11 +65,11 @@ export const useStyles = makeStyles({
         justifyContent: "center",
         alignItems: "center",
         padding: "8px",
-        width: '237.34px',
+        width: '100%',
         height: '51.96px',
         margin: '0.8rem auto',
     },
     cardLanding:{
-        margin: '1rem',
+        margin: '0rem auto 4rem',
         }
 });

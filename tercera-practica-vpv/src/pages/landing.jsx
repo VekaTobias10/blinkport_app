@@ -3,6 +3,7 @@ import PriceCardLanding from '../components/price-component-container/price-sect
 import Header from '../components/header-component/header';
 import CarrouselContainer from '../components/carousel-component/carousel-container';
 import ImageSection from '../components/landing-components/home-visual-section';
+import FooterLanding from '../components/footer-component';
 
 
 function LandingPage (){
@@ -12,6 +13,7 @@ function LandingPage (){
        <ImageSection></ImageSection>
        <CarrouselContainer></CarrouselContainer>    
        <PriceCardLanding></PriceCardLanding>
+       <FooterLanding></FooterLanding>
        </React.Fragment>
    );
 }
