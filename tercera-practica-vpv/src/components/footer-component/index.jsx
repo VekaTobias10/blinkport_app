@@ -6,6 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
 
+
   export default function FooterLanding() {
     const classes = useStyles();
     const [language, setLanguage] = React.useState('');
@@ -17,34 +18,34 @@ import Select from '@material-ui/core/Select';
 
     return (
       <React.Fragment>
-      <footer>
-        <div>
+      <footer className={classes.mainContainer}>
+        <div className={classes.boxFooter}>
+        <div className={classes.legalContainer}>
           <h4>LEGAL</h4>
-          <ol>
-            <li>TERMS</li>
-            <li>PRIVACY</li>
-            <li>CONTACT</li>
-          </ol>
-        </div>
+            <p>TERMS</p>
+            <p>PRIVACY</p>
+            <p>CONTACT</p>
+          </div>
+        <div className={classes.languageContainer}>
          <h4>LANGUAGE</h4>
          <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel id="demo-simple-select-outlined-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-outlined-label">English</InputLabel>
         <Select
           labelId="demo-simple-select-outlined-label"
           id="demo-simple-select-outlined"
           value={language}
           onChange={handleChange}
-          label="Age"
+          // label="English"
         >
           <MenuItem value="">
-            <em>None</em>
           </MenuItem>
           <MenuItem value={language}>English</MenuItem>
           <MenuItem value={language}>Spanish</MenuItem>
           <MenuItem value={language}>French</MenuItem>
         </Select>
       </FormControl>
-        <div></div>
+       </div>
+       </div>
       </footer>
       </React.Fragment>
     );
