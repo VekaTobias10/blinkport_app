@@ -1,10 +1,17 @@
 .personal-data_bigcontainer{
     display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+/* .personal-data_input-titelcontainer{
+    width: 34%;
     justify-content: center;
     height: 100%;
     margin-left: 9.37rem;
 
-}
+} */
 
 .personal-data_input-titelcontainer{
     width: 25.56rem;
@@ -32,14 +39,17 @@
    
 }
 
-.img_container{
-    width: 34.25rem;
-    max-height: 28.12rem;
-}
 
-.img{
+.img-gifmoving{
+    max-height: 450px;
+} 
+
+
+
+/* .img{
     max-height: 28.12rem;
 }
+ */
 
 .text_check-box{
     font-weight: 400;
