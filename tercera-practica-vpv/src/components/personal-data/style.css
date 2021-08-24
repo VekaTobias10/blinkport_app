@@ -5,18 +5,28 @@
     margin: 2rem auto;
 }
 
-.personal-data_input-titelcontainer{
+/* .personal-data_input-titelcontainer{
     width: 34%;
+    justify-content: center;
+    height: 100%;
+    margin-left: 9.37rem;
+
+} */
+
+.personal-data_input-titelcontainer{
+    width: 25.56rem;
+    max-height: 18.75rem;
+    margin-right: 3.12rem;
 }
 
 .data_titel{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-style: normal;
     color: #9E9E9E;
-    margin-bottom: 7px;
-    margin-top: 0px;
-    margin-left: 10px;
+    margin-bottom: 0.43rem;
+    margin-top: 0rem;
+    margin-left: 0.62rem;
 }
 
 .input_container{
@@ -25,20 +35,38 @@
 
 .check-box{
     display: flex;
-    margin:4px 0px;
+    margin:0.25rem 0rem;
    
 }
+
 
 .img-gifmoving{
     max-height: 450px;
 } 
 
+
+
+/* .img{
+    max-height: 28.12rem;
+}
+ */
+
 .text_check-box{
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.81rem;
     font-style: normal;
-    margin: 1px 0px;
+    margin: 0rem 0rem;
 }
+
+.text_check-box_top{
+    font-weight: 400;
+    font-size: 0.81rem;
+    font-style: normal;
+    margin-top: 0.4rem;
+    margin-bottom: 0rem;
+
+}
+
 
 
 

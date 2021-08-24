@@ -83,15 +83,17 @@ function PersonalData() {
                 </div>
                 <div className="check-box">
                     <Checkbox
+                        className={classes.checkBoxElement}
                         checked={checked}
                         onChange={handleChange}
                         color="primary"
                         inputProps={{ 'aria-label': 'secondary checkbox' }}
                     />
-                    <p className="text_check-box">I am +18 years old and I read the Terms and Conditions</p>
+                    <p className="text_check-box_top">I am +18 years old and I read the Terms and Conditions</p>
                 </div>
                 <div className="check-box">
                     <Checkbox
+                        className={classes.checkBoxElement}
                         checked={checked}
                         onChange={handleChange}
                         color="primary"

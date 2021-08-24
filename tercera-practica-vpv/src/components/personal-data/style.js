@@ -8,15 +8,18 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     inputData: {
-        width: "190px",
-        height: "50px",
-        borderRadius: "4px",
+        width: "11.87rem",
+        height: "3.12rem",
+        borderRadius: "0.25rem",
     },
     bigInputData: {
-        width: "396px",
-        height: "50px",
-        borderRadius: "4px"
+        width: "24.75rem",
+        height: "3.12rem",
+        borderRadius: "0.25rem"
     },
+    checkBoxElement: {
+        padding: "0.25rem"
+    }
 
 }));
 
