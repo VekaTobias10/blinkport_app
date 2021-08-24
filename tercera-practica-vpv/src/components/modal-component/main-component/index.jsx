@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import PriceCardComponentStepper from '../../price-component-container/card-component-stepper/card-component-stepper';
 import PersonalData from '../../personal-data';
 import PaymentCard from '../modal-tarjeta/modal-pago';
+import LastPageModal from '../finalmodalpage-component';
+import LandingPage from '../../../pages/landing';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,7 +38,7 @@ function getStepContent(step) {
     case 2:
       return <PaymentCard></PaymentCard>;
     default:
-      return 'Unknown step';
+      return <LandingPage></LandingPage>; 
   }
 }
 
@@ -112,9 +114,9 @@ export default function HorizontalLinearStepper() {
       <div>
         {activeStep === steps.length ? (
           <div>
-            <Typography className={classes.instructions}>
-              All steps completed - you&apos;re finished
-            </Typography>
+            <div>
+           <LastPageModal></LastPageModal>
+           </div>
             <Button onClick={handleReset} className={classes.button}>
               Reset
             </Button>

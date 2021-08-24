@@ -1,15 +1,12 @@
 .personal-data_bigcontainer{
     display: flex;
-    justify-content: center;
-    height: 100%;
-    margin-left: 150px;
-
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 2rem auto;
 }
 
 .personal-data_input-titelcontainer{
-    width: 409px;
-    max-height: 300px;
-    margin-right: 50px;
+    width: 34%;
 }
 
 .data_titel{
@@ -32,14 +29,9 @@
    
 }
 
-.img_container{
-    width: 548px;
+.img-gifmoving{
     max-height: 450px;
-}
-
-.img{
-    max-height: 450px;
-}
+} 
 
 .text_check-box{
     font-weight: 400;

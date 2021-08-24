@@ -101,8 +101,8 @@ function PersonalData() {
                 </div>
 
             </div>
-            <div className="img_container">
-                <img className="img" src={imgmove} alt="logo-movimiento" />
+            <div className="img_container-personal">
+                <img className="img-gifmoving" src={imgmove} alt="logo-movimiento" />
             </div>
         </div>
     )
