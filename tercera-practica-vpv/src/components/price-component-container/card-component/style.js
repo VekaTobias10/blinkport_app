@@ -1,12 +1,16 @@
+
 import { makeStyles } from '@material-ui/core/styles';
 
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
 
     containerMainCards: {
-        margin: 'auto',
+        margin: '0 auto 3rem',
         width: '80%',
         display: 'flex',
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column'
+        }
     },
 
     titleContainer: {
@@ -14,10 +18,12 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'flex-start',
-        padding: '46px',
+        padding: '2rem',
         width: '84%',
-        height: '9%',
         margin: 'auto',
+        [theme.breakpoints.down('sm')]: {
+            padding: '0.8rem',
+        }
     },
     title: {
         display: 'flex',
@@ -36,12 +42,12 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'flex-Start',
         padding: '1.5rem',
-        width: '322px',
+        width: '100%',
         // left: '144px',
         // top: '2460px',
         background: '#FFFFFF',
         boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
-        borderRadius: '17.7121px',
+        borderRadius: '17px',
 
     },
 
@@ -69,7 +75,52 @@ export const useStyles = makeStyles({
         height: '51.96px',
         margin: '0.8rem auto',
     },
-    cardLanding:{
-        margin: '0rem auto 4rem',
-        }
-});
+    cardLanding: {
+        margin: '1.5rem',
+        width: '100%',
+    },
+    priceNumber: {
+        fontSize: '28.34px',
+        lineHeight: '38px',
+        textAlign: 'Left',
+        verticalAlign: 'Top',
+        color: '#000000',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+    },
+    monthText: {
+        color: '#979797',
+        fontSize: '14.53px',
+        lineHeight: '50px',
+    },
+    textDescriptionCard: {
+        position: 'static',
+        color: '#979797',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fontSize: '16px',
+        lineHeight: '24px',
+        letterSpacing: '0.177121px',
+    },
+    textContainerDescription: {
+        height: '72.83px',
+    },
+
+    iconCheckCircle: {
+        marginRight: '6px',
+    },
+    containerItemList: {
+        display: 'flex',
+        alignItems: 'center',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fontSize: '18.8929px',
+        lineHeight: '28px',
+        letterSpacing: '0.177121px',
+        color: '#000000',
+        marginBottom: '0.8rem',
+    }
+
+
+}));
+

@@ -6,6 +6,7 @@ import ImageSection from '../components/landing-components/home-visual-section';
 import FooterLanding from '../components/footer-component';
 
 
+
 function LandingPage (){
    return (
        <React.Fragment>
