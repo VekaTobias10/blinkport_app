@@ -1,13 +1,8 @@
 import React from "react";
 import Line1 from "../../../assets/img/Line1.png";
-import {
-  CardMedia,
-  Typography,
-  CssBaseline,
-} from "@material-ui/core";
+import { CardMedia, Typography, CssBaseline } from "@material-ui/core";
 import { useStyles } from "../card-component/style.js";
-import "./price-style2.css";
-import PriceCardComponent from '../card-component/card-component';
+import PriceCardComponent from "../card-component/card-component";
 
 export default function PriceCardLanding() {
   const classes = useStyles();

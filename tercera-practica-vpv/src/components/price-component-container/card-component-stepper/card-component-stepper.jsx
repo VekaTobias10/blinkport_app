@@ -1,55 +1,55 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Button,
-} from "@material-ui/core";
+import { Card, CardContent, Typography, Button } from "@material-ui/core";
 import { useStyles } from "./style.js";
-import "../price-section/price-style2.css";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 
-
-
 export default function PriceCardComponentStepper() {
-    const classes = useStyles();
-  
-    return (
-      <React.Fragment>
+  const classes = useStyles();
+
+  return (
+    <React.Fragment>
       <div className={classes.containerMainCards}>
-      {/* <div className={classes.card}> */}
+        {/* <div className={classes.card}> */}
         <Card className={classes.root}>
-        {/* <Card> */}
+          {/* <Card> */}
           <CardContent>
             <Typography variant="h4">Free</Typography>
             <Typography variant="h6">
-              <span className="price-number">$0</span>
-              <span className="month-text">/Month</span>
+              <span className={classes.priceNumber}>$0</span>
+              <span className={classes.monthText}>/Month</span>
             </Typography>
-            <div className="text-container-description">
-              <Typography variant="p" className="text-description-card">
+            <div className={classes.textContainerDescription}>
+              <Typography variant="p" className={classes.textDescriptionCard}>
                 Totally free
               </Typography>
             </div>
             <div className="container-lit-check">
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Continental reach</div>
-              </Typography>
-          
-              <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Discounts avaliable</div>
-              </Typography>
-     
-              <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Half / Free Package</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Continental reach
+                </div>
               </Typography>
 
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Small pets Included</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Discounts avaliable
+                </div>
+              </Typography>
+
+              <Typography variant="p">
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Half / Free Package
+                </div>
+              </Typography>
+
+              <Typography variant="p">
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Small pets Included
+                </div>
               </Typography>
             </div>
             <Button className={classes.buttonPrices} variant="contained">
@@ -58,36 +58,44 @@ export default function PriceCardComponentStepper() {
           </CardContent>
         </Card>
 
-      {/* <div className={classes.card}> */}
+        {/* <div className={classes.card}> */}
         <Card className={classes.root}>
-        {/* <Card> */}
+          {/* <Card> */}
           <CardContent>
             <Typography variant="h4">Custom</Typography>
             <Typography variant="h6">
-              <span className="price-number">$500</span>
-              <span className="month-text">/Month</span>
+              <span className={classes.priceNumber}>$500</span>
+              <span className={classes.monthText}>/Month</span>
             </Typography>
-            <div className="text-container-description">
-              <Typography variant="p" className="text-description-card">
+            <div className={classes.textContainerDescription}>
+              <Typography variant="p" className={classes.textDescriptionCard}>
                 The costumized plan we craft to fit all your needs.
               </Typography>
             </div>
             <div className="container-lit-check">
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Unlimited reach</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Unlimited reach
+                </div>
               </Typography>
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Lux Discount Card</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Lux Discount Card
+                </div>
               </Typography>
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Full Free Package </div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Full Free Package{" "}
+                </div>
               </Typography>
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Package Insurance</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Package Insurance
+                </div>
               </Typography>
             </div>
             <Button className={classes.buttonPrices} variant="contained">
@@ -95,51 +103,60 @@ export default function PriceCardComponentStepper() {
             </Button>
           </CardContent>
         </Card>
-       {/* <div className={classes.card}>  */}
+        {/* <div className={classes.card}>  */}
         {/* <Card> */}
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h4">Platinum</Typography>
             <Typography variant="h6">
-              <span className="price-number">$900</span>
-              <span className="month-text">/Month</span>
+              <span className={classes.priceNumber}>$900</span>
+              <span className={classes.monthText}>/Month</span>
             </Typography>
-            <div className="text-container-description">
-              <Typography variant="p" className="text-description-card">
-              The top experience for those who understand life as a real, actual, impressive journey. 
+            <div className={classes.textContainerDescription}>
+              <Typography variant="p" className={classes.textDescriptionCard}>
+                The top experience for those who understand life as a real,
+                actual, impressive journey.
               </Typography>
             </div>
-    
+
             <div className="container-lit-check">
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                National reach</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  National reach
+                </div>
               </Typography>
-             
+
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Instalations Tour</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Instalations Tour
+                </div>
               </Typography>
-         
+
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                One Free Handbag</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  One Free Handbag
+                </div>
               </Typography>
-        
+
               <Typography variant="p">
-                <div className="container-item-list"><CheckCircleOutlineIcon className="icon-checkCircle" />
-                Local Tourism Guide</div>
+                <div className={classes.containerItemList}>
+                  <CheckCircleOutlineIcon className={classes.iconCheckCircle} />
+                  Local Tourism Guide
+                </div>
               </Typography>
-                 </div>
+            </div>
             <Button className={classes.buttonPrices} variant="contained">
               CHOOSE PLAN
             </Button>
           </CardContent>
         </Card>
-        </div>
-        {/* </div> */}
-        </React.Fragment>
-    
-      /* {/* </div> */
- );
+      </div>
+      {/* </div> */}
+    </React.Fragment>
+
+    /* {/* </div> */
+  );
 }
