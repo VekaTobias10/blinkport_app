@@ -16,17 +16,12 @@ function App() {
     <React.Fragment>
       <Router>
         <Switch>   
-    <div className="App">
-     <Route path='*'> 
-     <LandingPage></LandingPage>
-      </Route>
       <Route path='/registration'>
       <ModalPage></ModalPage>
       </Route> 
-     
-
-
-    </div>
+      <Route path='*'> 
+     <LandingPage></LandingPage>
+      </Route>
     </Switch>
     </Router>
     </React.Fragment>
