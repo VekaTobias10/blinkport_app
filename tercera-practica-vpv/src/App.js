@@ -2,9 +2,14 @@ import './App.css';
 import React from 'react';
 import LandingPage from './pages/landing';
 import ModalPage from './pages/modal';
+<<<<<<< HEAD
 import RegisterData from './pages/register/index';
 
 
+=======
+import RegisterData from './pages/register/index'
+import "@fontsource/roboto";
+>>>>>>> main
 import {
   BrowserRouter as Router,
   Switch,
