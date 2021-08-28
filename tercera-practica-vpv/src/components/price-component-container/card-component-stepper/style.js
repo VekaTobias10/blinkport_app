@@ -9,28 +9,6 @@ export const useStyles = makeStyles({
         display: 'flex',
     },
 
-    titleContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        padding: '46px',
-        width: '84%',
-        height: '9%',
-        margin: 'auto',
-    },
-    title: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: 0,
-        position: 'static',
-        width: 926.84,
-        height: '72px',
-        left: 46,
-        top: 46,
-    },
-
     // root de la card
     root: {
         flexDirection: 'column',
@@ -38,28 +16,13 @@ export const useStyles = makeStyles({
         padding: '1rem',
         width: '100%',
         margin: '1.5rem',
-        // left: '144px',
-        // top: '2460px',
         background: '#FFFFFF',
         boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
         borderRadius: '17.7121px',
 
     },
 
-    media: {
-        position: 'static',
-        width: 34,
-        height: 0,
-        left: 34,
-        top: 36,
-        border: '1px solid #000000',
-        transform: 'rotate(180deg)',
-        flex: 'none',
-        order: 0,
-        flexGrow: 0,
-        margin: '0px 8px',
-    },
-    buttonPrices: {
+   buttonPrices: {
         backgroundColor: "#BBDEFB",
         color: "white",
         borderRadius: "16px",
@@ -118,10 +81,3 @@ export const useStyles = makeStyles({
 
 });
 
-// width: 322px;
-// padding: 1.5rem;
-// background: #FFFFFF;
-// box-shadow: 1.90183px 1.90183px 30.4292px rgb(0 0 0 / 8%);
-// align-items: flex-Start;
-// border-radius: 17.7121px;
-// flex-direction: column;
