@@ -6,7 +6,7 @@ import StepLabel from "@material-ui/core/StepLabel";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import PriceCardComponentStepper from "../../price-component-container/card-component-stepper/card-component-stepper";
-import PersonalData from "../../personal-data";
+import PersonalData from "../personal-data";
 import PaymentOptions from "../modal-tarjeta/payment-section";
 import LastPageModal from "../finalmodalpage-component";
 import LandingPage from "../../../pages/landing";
