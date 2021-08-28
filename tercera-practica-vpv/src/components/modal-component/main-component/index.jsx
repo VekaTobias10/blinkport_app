@@ -11,6 +11,7 @@ import PaymentCard from "../modal-tarjeta/modal-pago";
 import LastPageModal from "../finalmodalpage-component";
 import LandingPage from "../../../pages/landing";
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "50%",

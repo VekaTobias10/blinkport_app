@@ -33,6 +33,22 @@ import { makeStyles } from '@material-ui/core/styles';
         padding: "0rem",
       },
     },
+    singupTitle:{
+      fontWeight: "400",
+      fontStyle: "normal",
+      fontSize: "2rem",
+      color: "#9E9E9E",
+      margin: "1.5rem 0rem",
+    },
+    singupParagraph:{
+      fontWeight: "400",
+      fontStyle: "normal",
+      fontSize: "1.1rem",
+      color: "#9E9E9E",
+      lineHeight: "2rem",
+      letterSpacing: "0.009rem",
+      maxWidth: "58%",
+    },
     root: {
       display: 'flex',
       flexWrap: 'wrap',

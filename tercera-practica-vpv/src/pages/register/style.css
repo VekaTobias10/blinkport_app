@@ -53,22 +53,22 @@
     color: #1976D2 !important;
 }
 
-.singup_container{
+/* .singup_container{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 2rem;
-}
+} */
 
-.singup_title{
+/* .singup_title{
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
     color: #9E9E9E;
     margin: 1.5rem 0rem;
-}
+} */
 
-.singup_paragraph{
+/* .singup_paragraph{
     font-weight: 400;
     font-style: normal;
     font-size: 1.1rem;
@@ -76,6 +76,6 @@
     line-height: 2rem;
     letter-spacing: 0.009rem;
     width: 65%;
-}
+} */
 
 
