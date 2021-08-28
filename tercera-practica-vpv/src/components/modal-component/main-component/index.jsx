@@ -18,6 +18,13 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginRight: theme.spacing(1),
+    backgroundColor: "#BBDEFB",
+    color: "white",
+    width: '29%',
+    marginLeft: '12rem'
+  },
+  btnSkip:{
+    display:'none'
   },
   instructions: {
     marginTop: theme.spacing(1),
@@ -128,13 +135,15 @@ export default function HorizontalLinearStepper() {
               {getStepContent(activeStep)}
             </Typography>
             <div>
+            {isStepOptional(activeStep) && (
               <Button
                 disabled={activeStep === 0}
                 onClick={handleBack}
-                className={classes.button}
+                className={`${classes.button}`}
               >
                 Back
               </Button>
+              )}
 
               {isStepOptional(activeStep) && (
                 <Button
