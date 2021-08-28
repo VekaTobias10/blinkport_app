@@ -1,32 +1,32 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
-import StepLabel from '@material-ui/core/StepLabel';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import PriceCardComponentStepper from '../../price-component-container/card-component-stepper/card-component-stepper';
-import PersonalData from '../../personal-data';
-import PaymentCard from '../modal-tarjeta/modal-pago';
-import LastPageModal from '../finalmodalpage-component';
-import LandingPage from '../../../pages/landing';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Stepper from "@material-ui/core/Stepper";
+import Step from "@material-ui/core/Step";
+import StepLabel from "@material-ui/core/StepLabel";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import PriceCardComponentStepper from "../../price-component-container/card-component-stepper/card-component-stepper";
+import PersonalData from "../../personal-data";
+import PaymentOptions from "../modal-tarjeta/payment-section";
+import LastPageModal from "../finalmodalpage-component";
+import LandingPage from "../../../pages/landing";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      width: '50%',
-      margin: 'auto',
-    },
-    button: {
-      marginRight: theme.spacing(1),
-    },
-    instructions: {
-      marginTop: theme.spacing(1),
-      marginBottom: theme.spacing(1),
-    },
-  }));
+  root: {
+    width: "50%",
+    margin: "auto",
+  },
+  button: {
+    marginRight: theme.spacing(1),
+  },
+  instructions: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  },
+}));
 
 function getSteps() {
-  return ['Personal Data', 'Subscription Plan', 'Payment details'];
+  return ["Personal Data", "Subscription Plan", "Payment details"];
 }
 
 function getStepContent(step) {
@@ -36,9 +36,9 @@ function getStepContent(step) {
     case 1:
       return <PriceCardComponentStepper></PriceCardComponentStepper>;
     case 2:
-      return <PaymentCard></PaymentCard>;
+      return <PaymentOptions></PaymentOptions>;
     default:
-      return <LandingPage></LandingPage>; 
+      return <LandingPage></LandingPage>;
   }
 }
 
@@ -92,40 +92,46 @@ export default function HorizontalLinearStepper() {
 
   return (
     <React.Fragment>
-    <div className={classes.root}>
-      <Stepper activeStep={activeStep}>
-        {steps.map((label, index) => {
-          const stepProps = {};
-          const labelProps = {};
-          if (isStepOptional(index)) {
-            labelProps.optional = <Typography variant="caption"></Typography>;
-          }
-          if (isStepSkipped(index)) {
-            stepProps.completed = false;
-          }
-          return (
-            <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
-            </Step>
-          );
-        })}
-      </Stepper>
+      <div className={classes.root}>
+        <Stepper activeStep={activeStep}>
+          {steps.map((label, index) => {
+            const stepProps = {};
+            const labelProps = {};
+            if (isStepOptional(index)) {
+              labelProps.optional = <Typography variant="caption"></Typography>;
+            }
+            if (isStepSkipped(index)) {
+              stepProps.completed = false;
+            }
+            return (
+              <Step key={label} {...stepProps}>
+                <StepLabel {...labelProps}>{label}</StepLabel>
+              </Step>
+            );
+          })}
+        </Stepper>
       </div>
       <div>
         {activeStep === steps.length ? (
           <div>
             <div>
-           <LastPageModal></LastPageModal>
-           </div>
+              <LastPageModal></LastPageModal>
+            </div>
             <Button onClick={handleReset} className={classes.button}>
               Reset
             </Button>
           </div>
         ) : (
           <div>
-            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+            <Typography className={classes.instructions}>
+              {getStepContent(activeStep)}
+            </Typography>
             <div>
-              <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
+              <Button
+                disabled={activeStep === 0}
+                onClick={handleBack}
+                className={classes.button}
+              >
                 Back
               </Button>
               {isStepOptional(activeStep) && (
@@ -145,7 +151,7 @@ export default function HorizontalLinearStepper() {
                 onClick={handleNext}
                 className={classes.button}
               >
-                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                {activeStep === steps.length - 1 ? "Finish" : "Next"}
               </Button>
             </div>
           </div>

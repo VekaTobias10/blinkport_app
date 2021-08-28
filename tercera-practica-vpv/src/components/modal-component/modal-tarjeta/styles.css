@@ -1,0 +1,13 @@
+.personal-data_bigcontainer .MuiTabs-flexContainer {
+  justify-content: space-between;
+}
+
+.formInputs {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+.formInputs .MuiTextField-root,
+.formInputs .selectClass {
+  width: 45%;
+}
