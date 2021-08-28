@@ -1,22 +1,29 @@
 import './App.css';
 import React from 'react';
 import LandingPage from './pages/landing';
+import ModalPage from './pages/modal';
+import ModalPage from './pages/modal';
+import RegisterData from './pages/register/index'
+
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  // Link
+  Route
 } from 'react-router-dom';
-import ModalPage from './pages/modal';
-
 
 
 function App() {
   return (
+
+
     <React.Fragment>
       <Router>
-        <Switch>   
-      <Route path='/registration'>
+        <Switch>
+      <Route path='/login'>
+         <RegisterData></RegisterData>
+      </Route>
+      
+      <Route path='/register'>
       <ModalPage></ModalPage>
       </Route> 
       <Route path='*'> 
@@ -25,6 +32,7 @@ function App() {
     </Switch>
     </Router>
     </React.Fragment>
+
   );
 }
 
