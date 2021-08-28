@@ -1,34 +1,18 @@
+
 import { makeStyles } from '@material-ui/core/styles';
 
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
 
     containerMainCards: {
-        margin: 'auto',
+        margin: '0 auto 3rem',
         width: '80%',
         display: 'flex',
-    },
-
-    titleContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        padding: '46px',
-        width: '84%',
-        height: '9%',
-        margin: 'auto',
-    },
-    title: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: 0,
-        position: 'static',
-        width: 926.84,
-        height: '72px',
-        left: 46,
-        top: 46,
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+            margin: 'auto',
+            width: '80%'
+        }
     },
 
     // root de la card
@@ -36,27 +20,13 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'flex-Start',
         padding: '1.5rem',
-        width: '322px',
-        // left: '144px',
-        // top: '2460px',
+        width: '100%',
         background: '#FFFFFF',
         boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
-        borderRadius: '17.7121px',
-
-    },
-
-    media: {
-        position: 'static',
-        width: 34,
-        height: 0,
-        left: 34,
-        top: 36,
-        border: '1px solid #000000',
-        transform: 'rotate(180deg)',
-        flex: 'none',
-        order: 0,
-        flexGrow: 0,
-        margin: '0px 8px',
+        borderRadius: '17px',
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+        }
     },
     buttonPrices: {
         backgroundColor: "#BBDEFB",
@@ -69,7 +39,66 @@ export const useStyles = makeStyles({
         height: '51.96px',
         margin: '0.8rem auto',
     },
-    cardLanding:{
-        margin: '0rem auto 4rem',
+    cardLanding: {
+        margin: '1.5rem',
+        width: '100%',
+        [theme.breakpoints.down('sm')]: {
+            margin: 'auto',
+            padding: '1.5rem 0',
+            width: '70%',
         }
-});
+    },
+    priceNumber: {
+        fontSize: '28.34px',
+        lineHeight: '38px',
+        textAlign: 'Left',
+        verticalAlign: 'Top',
+        color: '#000000',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+    },
+    monthText: {
+        color: '#979797',
+        fontSize: '14.53px',
+        lineHeight: '50px',
+    },
+    textDescriptionCard: {
+        position: 'static',
+        color: '#979797',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fontSize: '16px',
+        lineHeight: '24px',
+        letterSpacing: '0.177121px',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        }
+    },
+    textContainerDescription: {
+        height: '72.83px',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        }
+    },
+
+    iconCheckCircle: {
+        marginRight: '6px',
+    },
+    containerItemList: {
+        display: 'flex',
+        alignItems: 'center',
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fontSize: '1.3rem',
+        lineHeight: '28px',
+        letterSpacing: '0.177121px',
+        color: '#000000',
+        marginBottom: '0.8rem',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        }
+    }
+
+
+}));
+

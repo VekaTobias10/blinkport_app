@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { useStyles } from './style.js';
-import imgmove from '../../assets/img-gif/imgmove.gif';
+import imgmove from '../../../assets/img-gif/imgmove.gif';
 import Checkbox from '@material-ui/core/Checkbox';
 import './style.css'
 

@@ -44,6 +44,7 @@ function getStepContent(step) {
 
 export default function HorizontalLinearStepper() {
   const classes = useStyles();
+
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
   const steps = getSteps();
@@ -118,7 +119,7 @@ export default function HorizontalLinearStepper() {
               <LastPageModal></LastPageModal>
             </div>
             <Button onClick={handleReset} className={classes.button}>
-              Reset
+              Home
             </Button>
           </div>
         ) : (
@@ -134,20 +135,18 @@ export default function HorizontalLinearStepper() {
               >
                 Back
               </Button>
+
               {isStepOptional(activeStep) && (
                 <Button
                   variant="contained"
-                  color="primary"
                   onClick={handleSkip}
-                  className={classes.button}
+                  className={`${classes.button} ${classes.btnSkip}`}
                 >
                   Skip
                 </Button>
               )}
-
               <Button
                 variant="contained"
-                color="primary"
                 onClick={handleNext}
                 className={classes.button}
               >
