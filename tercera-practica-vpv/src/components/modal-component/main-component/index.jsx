@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import PriceCardComponentStepper from "../../price-component-container/card-component-stepper/card-component-stepper";
 import PersonalData from "../personal-data";
-import PaymentCard from "../modal-tarjeta/modal-pago";
+import PaymentOptions from "../modal-tarjeta/payment-section";
 import LastPageModal from "../finalmodalpage-component";
 import LandingPage from "../../../pages/landing";
 
@@ -19,13 +19,6 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginRight: theme.spacing(1),
-    backgroundColor: "#BBDEFB",
-    color: "white",
-    width: '29%',
-    marginLeft: '12rem'
-  },
-  btnSkip:{
-    display:'none'
   },
   instructions: {
     marginTop: theme.spacing(1),
@@ -44,7 +37,7 @@ function getStepContent(step) {
     case 1:
       return <PriceCardComponentStepper></PriceCardComponentStepper>;
     case 2:
-      return <PaymentCard></PaymentCard>;
+      return <PaymentOptions></PaymentOptions>;
     default:
       return <LandingPage></LandingPage>;
   }
@@ -136,15 +129,13 @@ export default function HorizontalLinearStepper() {
               {getStepContent(activeStep)}
             </Typography>
             <div>
-            {isStepOptional(activeStep) && (
               <Button
                 disabled={activeStep === 0}
                 onClick={handleBack}
-                className={`${classes.button}`}
+                className={classes.button}
               >
                 Back
               </Button>
-              )}
 
               {isStepOptional(activeStep) && (
                 <Button

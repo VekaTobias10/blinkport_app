@@ -9,32 +9,10 @@ export const useStyles = makeStyles((theme) => ({
         width: '80%',
         display: 'flex',
         [theme.breakpoints.down('sm')]: {
-            flexDirection: 'column'
+            flexDirection: 'column',
+            margin: 'auto',
+            width: '80%'
         }
-    },
-
-    titleContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        padding: '2rem',
-        width: '84%',
-        margin: 'auto',
-        [theme.breakpoints.down('sm')]: {
-            padding: '0.8rem',
-        }
-    },
-    title: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: 0,
-        position: 'static',
-        width: 926.84,
-        height: '72px',
-        left: 46,
-        top: 46,
     },
 
     // root de la card
@@ -43,26 +21,12 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'flex-Start',
         padding: '1.5rem',
         width: '100%',
-        // left: '144px',
-        // top: '2460px',
         background: '#FFFFFF',
         boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
         borderRadius: '17px',
-
-    },
-
-    media: {
-        position: 'static',
-        width: 34,
-        height: 0,
-        left: 34,
-        top: 36,
-        border: '1px solid #000000',
-        transform: 'rotate(180deg)',
-        flex: 'none',
-        order: 0,
-        flexGrow: 0,
-        margin: '0px 8px',
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+        }
     },
     buttonPrices: {
         backgroundColor: "#BBDEFB",
@@ -78,6 +42,11 @@ export const useStyles = makeStyles((theme) => ({
     cardLanding: {
         margin: '1.5rem',
         width: '100%',
+        [theme.breakpoints.down('sm')]: {
+            margin: 'auto',
+            padding: '1.5rem 0',
+            width: '70%',
+        }
     },
     priceNumber: {
         fontSize: '28.34px',
@@ -101,9 +70,15 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '16px',
         lineHeight: '24px',
         letterSpacing: '0.177121px',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        }
     },
     textContainerDescription: {
         height: '72.83px',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        }
     },
 
     iconCheckCircle: {
@@ -114,11 +89,14 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         fontStyle: 'normal',
         fontWeight: 'normal',
-        fontSize: '18.8929px',
+        fontSize: '1.3rem',
         lineHeight: '28px',
         letterSpacing: '0.177121px',
         color: '#000000',
         marginBottom: '0.8rem',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none',
+        }
     }
 
 
