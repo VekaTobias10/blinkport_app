@@ -14,8 +14,8 @@ function RegisterData() {
     };
 
     return (
-        <div className="page_container">
-            <div className="account_container">
+        <div className={classes.pageContainer}>
+            <div className={classes.accountContainer}>
 
                 <h5 className="account_title">Account</h5>
                 <form className={classes.root} noValidate>
@@ -43,18 +43,18 @@ function RegisterData() {
                     </div>
                     <Button className={classes.buttonlogin} variant="contained" >LOGIN</Button>
                     <div className="link_container">
-                        <p className="link"><a href="">Forgot password?</a></p>
-                        <p className="link"><a href="">Don´t have an account? Sing Up</a></p>
+                        <p className="link"><a className="link_color" href="">Forgot password?</a></p>
+                        <p className="link"><a className="link_color" href="">Don´t have an account? Sing Up</a></p>
 
                     </div>
                 </form>
 
             </div>
-            <div className="singup_container">
+            <div className={classes.singupContainer}>
                 <h5 className="singup_title">Sing Up</h5>
                 <p className="singup_paragraph">Book your teleports faster, pay with Bitcoin and get rewards for being a subscriber to the Business Plan.</p>
                 <Button className={classes.buttonlogin} variant="contained" >SING UP</Button>
-                <p className="link"><a href="">Do you want to see our plans before?</a></p>
+                <p className="link"><a className="link_color" href="">Do you want to see our plans before?</a></p>
             </div>
         </div>
     )
