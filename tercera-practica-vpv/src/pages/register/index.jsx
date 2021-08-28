@@ -51,8 +51,8 @@ function RegisterData() {
 
             </div>
             <div className={classes.singupContainer}>
-                <h5 className="singup_title">Sing Up</h5>
-                <p className="singup_paragraph">Book your teleports faster, pay with Bitcoin and get rewards for being a subscriber to the Business Plan.</p>
+                <h5 className={classes.singupTitle}>Sing Up</h5>
+                <p className={classes.singupParagraph}>Book your teleports faster, pay with Bitcoin and get rewards for being a subscriber to the Business Plan.</p>
                 <Button className={classes.buttonlogin} variant="contained" >SING UP</Button>
                 <p className="link"><a className="link_color" href="">Do you want to see our plans before?</a></p>
             </div>
