@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import LandingPage from './pages/landing';
 import ModalPage from './pages/modal';
-import ModalPage from './pages/modal';
 import RegisterData from './pages/register/index'
 
 import {
