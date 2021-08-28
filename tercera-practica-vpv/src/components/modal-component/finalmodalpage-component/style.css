@@ -1,0 +1,24 @@
+.main-container-registration{
+    display: flex;
+    width: 90%;
+    margin: 3rem auto 1rem;
+}
+
+.msg-registration{
+  width: 50%;
+  padding: 3rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.container-registration{
+    width: 50%;
+}
+
+.moving-gif{
+    max-height: 450px;
+}
+
+.icon-modal-reg{
+    color: #BBDEFB;
+}

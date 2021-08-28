@@ -17,6 +17,9 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: '500',
     color: '#FFFFFF',
     fontSize: '15px',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   },
   boxFooter: {
     display: 'flex',
