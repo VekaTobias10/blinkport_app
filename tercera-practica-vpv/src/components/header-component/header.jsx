@@ -1,23 +1,26 @@
-import "./styles.css";
 import logo from "../../assets/img/Logo.png";
-function Header() {
+import { useStyles } from "./style.js";
+
+
+
+export default function Header() {
+  const classes = useStyles();
   return (
     <header>
-      <nav className="navContainer">
+      <nav className={classes.navContainer}>
         <div>
-          <img src={logo} className="web-logo" alt="logo" />
+          <img src={logo} className={classes.webLogo} alt="logo" />
         </div>
-        <ul className="services_bar">
-          <li>SERVICES</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+        <ul className={classes.servicesBar}>
+          <li className={classes.li}>SERVICES</li>
+          <li className={classes.li}>ABOUT</li>
+          <li className={classes.li}>CONTACT</li>
         </ul>
         <div>
-          <button className="accessBtn">ACCESS</button>
+          <button className={classes.accessBtn}>ACCESS</button>
         </div>
       </nav>
     </header>
   );
 }
 
-export default Header;
