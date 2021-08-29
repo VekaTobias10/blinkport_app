@@ -36,7 +36,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     personalDataInputTitelcontainer:{
         width: "25.56rem",
-        maxHeight: "18.75rem",
+        // maxHeight: "18.75rem",
         marginRight: "3.12rem",
         [theme.breakpoints.down('sm')]: {
             width:"fit-content",

@@ -6,21 +6,50 @@ export const useStyles = makeStyles((theme) => ({
         width: "50%",
         margin: "auto",
         [theme.breakpoints.down('sm')]: {
-         marginTop: '0.6rem',
-         width: "fit-content",
+            marginTop: '0.6rem',
+            width: "fit-content",
         }
     },
     button: {
-        marginRight: theme.spacing(1),
         backgroundColor: "#BBDEFB",
         color: "white",
         width: '29%',
         marginLeft: '12rem',
+    },
+    btnBack: {
+            backgroundColor: "#BBDEFB",
+            color: "white",
         [theme.breakpoints.down('sm')]: {
-            marginLeft: '1rem',
-            marginTop:"10rem",
-            width: '90%',
-        },
+            width: '85%',
+            display: 'flex',
+            flexDirection: 'row',
+            position: 'relative',
+            right: '-1rem',
+            margin: '1rem',
+
+        }
+    },
+    btnNext: {
+        backgroundColor: "#BBDEFB",
+        color: "white",
+        [theme.breakpoints.down('sm')]: {
+            width: '85%',
+            display: 'flex',
+            flexDirection: 'row',
+            position: 'relative',
+            right: '-1rem',
+            margin: '1rem',
+        }
+    },
+    btnHome:{
+        [theme.breakpoints.down('sm')]: {
+            width: '85%',
+            display: 'flex',
+            flexDirection: 'row',
+            position: 'relative',
+            right: '-1rem',
+            margin: '1rem',
+        }
     },
     btnSkip: {
         display: 'none'
@@ -37,10 +66,10 @@ export const useStyles = makeStyles((theme) => ({
             padding: '0.5rem',
         }
     },
-    navContainerModalTwo:{
+    navContainerModalTwo: {
         [theme.breakpoints.down('sm')]: {
             display: 'flex',
-            alignItems : 'center',
+            alignItems: 'center',
         }
     },
     webLogoModal: {
@@ -86,6 +115,11 @@ export const useStyles = makeStyles((theme) => ({
             color: '#757575',
             borderRadius: '15px',
             fontSize: '2rem',
-        }    
-}
+        }
+    },
+    labelMobile: {
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        }
+    }
 }));

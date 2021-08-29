@@ -19,6 +19,7 @@ import { useHistory } from 'react-router-dom';
 
 
 
+
 function getSteps() {
   return ["Personal Data", "Subscription Plan", "Payment details"];
 }
@@ -68,8 +69,6 @@ export default function HorizontalLinearStepper() {
 
   const handleSkip = () => {
     if (!isStepOptional(activeStep)) {
-      // You probably want to guard against something like this,
-      // it should never occur unless someone's actively trying to break something.
       throw new Error("You can't skip a step that isn't optional.");
     }
 
@@ -81,10 +80,10 @@ export default function HorizontalLinearStepper() {
     });
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-  const { push } = useHistory()
+  // const handleReset = () => {
+  //   setActiveStep(0);
+  // };
+  const { push } = useHistory();
   return (
 
     <React.Fragment>
@@ -102,6 +101,7 @@ export default function HorizontalLinearStepper() {
           <ViewHeadlineOutlinedIcon className={classes.viewIcon}></ViewHeadlineOutlinedIcon>
         </div>
       </nav>
+
       <div className={classes.root}>
         <Stepper activeStep={activeStep}>
           {steps.map((label, index) => {
@@ -127,7 +127,7 @@ export default function HorizontalLinearStepper() {
             <div>
               <LastPageModal></LastPageModal>
             </div>
-            <Button onClick={() => push('/')} className={classes.button}>
+            <Button onClick={() => push('/')} className={`${classes.button} ${classes.btnHome}`}>
               Home
             </Button>
           </div>
@@ -141,7 +141,7 @@ export default function HorizontalLinearStepper() {
                 <Button
                   disabled={activeStep === 0}
                   onClick={handleBack}
-                  className={`${classes.button}`}
+                  className={`${classes.button} ${classes.btnBack}`}
                 >
                   Back
                 </Button>
@@ -159,7 +159,7 @@ export default function HorizontalLinearStepper() {
               <Button
                 variant="contained"
                 onClick={handleNext}
-                className={classes.button}
+                className={`${classes.button} ${classes.btnNext}`}
               >
                 {activeStep === steps.length - 1 ? "Finish" : "Next"}
               </Button>

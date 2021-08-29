@@ -8,6 +8,7 @@ export default function PriceCardComponentStepper() {
 
   return (
     <React.Fragment>
+       <h5 className={classes.titleModal}>Choose your plan</h5>
       <div className={classes.containerMainCards}>
         {/* <div className={classes.card}> */}
         <Card className={classes.root}>
@@ -113,7 +114,7 @@ export default function PriceCardComponentStepper() {
               <span className={classes.monthText}>/Month</span>
             </Typography>
             <div className={classes.textContainerDescription}>
-              <Typography variant="p" className={classes.textDescriptionCard}>
+              <Typography variant="p" className={`${classes.textContainerDescriptionTwo} ${classes.textDescriptionCard}`}>
                 The top experience for those who understand life as a real,
                 actual, impressive journey.
               </Typography>

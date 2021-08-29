@@ -1,12 +1,15 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
 
     containerMainCards: {
         margin: 'auto',
         width: '80%',
         display: 'flex',
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+        }
     },
 
     // root de la card
@@ -19,6 +22,10 @@ export const useStyles = makeStyles({
         background: '#FFFFFF',
         boxShadow: '1.90183px 1.90183px 30.4292px rgba(0, 0, 0, 0.08)',
         borderRadius: '17.7121px',
+        [theme.breakpoints.down('sm')]: {
+            width: '85%',
+            margin: '1.8rem auto',
+        }
 
     },
 
@@ -61,7 +68,15 @@ export const useStyles = makeStyles({
     },
     textContainerDescription: {
         height: '72.83px',
+        [theme.breakpoints.down('sm')]: {
+            height: '6rem',
+        }
     },
+    // textContainerDescriptionTwo:{
+    //     [theme.breakpoints.down('sm')]: {
+    //         height: '72.83px',
+    //     }
+    // },
 
     iconCheckCircle: {
         marginRight: '6px',
@@ -76,8 +91,19 @@ export const useStyles = makeStyles({
         letterSpacing: '0.177121px',
         color: '#000000',
         marginBottom: '0.8rem',
-    }
+    },
+    titleModal:{
+        display:'none',
+        [theme.breakpoints.down('sm')]: {
+            display: 'block',
+            width: '80%',
+            margin: '0.5rem auto',
+            fontSize: '2rem',
+            color: '#9E9E9E',
+            fontWeight: 'normal',
+        }
+    },
 
 
-});
+}));
 
