@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { InputLabel, TextField, MenuItem } from "@material-ui/core/";
+import { TextField, MenuItem } from "@material-ui/core/";
 import Select from "@material-ui/core/Select";
 import { useStyles } from "./styles.js";
 import banks from "../../../assets/img/banks.png";

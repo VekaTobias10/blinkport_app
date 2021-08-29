@@ -1,11 +1,11 @@
 .container {
   display: flex;
-  max-width: 1440px;
+  max-width: 90%;
   flex-direction: row;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 15px;
-  margin-left: 64px;
+  margin-left: auto;
   margin-bottom: 89px;
-  margin-right: 88px;
-  align-items: auto;
+  margin-right: auto;
+  justify-content: space-between;
 }
