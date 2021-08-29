@@ -14,8 +14,8 @@ function PersonalData() {
     };
 
     return (
-        <div className="personal-data_bigcontainer">
-            <div className="personal-data_input-titelcontainer">
+        <div className={classes.personalDataBigcontainer}>
+            <div className={classes.personalDataInputTitelcontainer}>
                 <h3 className="data_titel">Personal Data</h3>
                 <div className="input_container">
                     <form className={classes.root} noValidate autoComplete="off">
@@ -103,7 +103,7 @@ function PersonalData() {
                 </div>
 
             </div>
-            <div className="img_container-personal">
+            <div className={classes.imgContainerPersonal}>
                 <img className="img-gifmoving" src={imgmove} alt="logo-movimiento" />
             </div>
         </div>

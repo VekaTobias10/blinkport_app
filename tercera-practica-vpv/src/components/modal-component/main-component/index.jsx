@@ -16,6 +16,36 @@ import { useHistory } from 'react-router-dom';
 
 
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "50%",
+    margin: "auto",
+    [theme.breakpoints.down('sm')]: {
+      width: "fit-content",
+    },
+  },
+  button: {
+    marginRight: theme.spacing(1),
+    backgroundColor: "#BBDEFB",
+    color: "white",
+    width: '29%',
+    marginLeft: '12rem',
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: '1rem',
+      marginTop:"10rem",
+      width: '90%',
+    },
+  },
+  btnSkip: {
+    display: 'none'
+  },
+  instructions: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  },
+}));
+
+
 function getSteps() {
   return ["Personal Data", "Subscription Plan", "Payment details"];
 }
@@ -134,14 +164,14 @@ export default function HorizontalLinearStepper() {
               {getStepContent(activeStep)}
             </Typography>
             <div>
-            {isStepOptional(activeStep) && (
-              <Button
-                disabled={activeStep === 0}
-                onClick={handleBack}
-                className={`${classes.button}`}
-              >
-                Back
-              </Button>
+              {isStepOptional(activeStep) && (
+                <Button
+                  disabled={activeStep === 0}
+                  onClick={handleBack}
+                  className={`${classes.button}`}
+                >
+                  Back
+                </Button>
               )}
 
               {isStepOptional(activeStep) && (
