@@ -4,9 +4,11 @@ import { useStyles } from './style.js';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 import './style.css';
+import { useHistory } from 'react-router-dom';
 
 
 function RegisterData() {
+    const { push } = useHistory()
     const classes = useStyles();
     const [checked, setChecked] = React.useState(false);
     const handleChange = (event) => {
@@ -41,7 +43,7 @@ function RegisterData() {
                         />
                         <p className="text_check-box">Remember me</p>
                     </div>
-                    <Button className={classes.buttonlogin} variant="contained" >LOGIN</Button>
+                    <Button className={classes.buttonlogin} variant="contained" onClick={() => push('/')} >LOGIN</Button>
                     <div className="link_container">
                         <p className="link"><a className="link_color" href="">Forgot password?</a></p>
                         <p className="link"><a className="link_color" href="">Don´t have an account? Sing Up</a></p>
@@ -53,7 +55,7 @@ function RegisterData() {
             <div className={classes.singupContainer}>
                 <h5 className={classes.singupTitle}>Sing Up</h5>
                 <p className={classes.singupParagraph}>Book your teleports faster, pay with Bitcoin and get rewards for being a subscriber to the Business Plan.</p>
-                <Button className={classes.buttonlogin} variant="contained" >SING UP</Button>
+                <Button className={classes.buttonlogin} variant="contained" onClick={() => push('/register')} >SING UP</Button>
                 <p className="link"><a className="link_color" href="">Do you want to see our plans before?</a></p>
             </div>
         </div>

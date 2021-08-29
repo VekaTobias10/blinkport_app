@@ -12,6 +12,8 @@ import LastPageModal from "../finalmodalpage-component";
 import LandingPage from "../../../pages/landing";
 import logo from "../../../assets/img/Logo.png";
 import ViewHeadlineOutlinedIcon from '@material-ui/icons/ViewHeadlineOutlined';
+import { useHistory } from 'react-router-dom';
+
 
 
 function getSteps() {
@@ -79,8 +81,9 @@ export default function HorizontalLinearStepper() {
   const handleReset = () => {
     setActiveStep(0);
   };
-
+  const { push } = useHistory()
   return (
+
     <React.Fragment>
        <nav className={`${classes.navContainerModal} ${classes.navContainerModalTwo}`}>
         <div>
@@ -121,7 +124,7 @@ export default function HorizontalLinearStepper() {
             <div>
               <LastPageModal></LastPageModal>
             </div>
-            <Button onClick={handleReset} className={classes.button}>
+            <Button onClick={() => push('/')} className={classes.button}>
               Home
             </Button>
           </div>

@@ -1,7 +1,8 @@
 .carousel_container{ 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 5rem;
-    height: 45.8rem;
+    /* height: 45.8rem; */
     background-color:rgb(176, 209, 247);
 }
