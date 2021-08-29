@@ -16,6 +16,9 @@ import { useHistory } from 'react-router-dom';
 
 
 
+
+
+
 function getSteps() {
   return ["Personal Data", "Subscription Plan", "Payment details"];
 }
@@ -134,14 +137,14 @@ export default function HorizontalLinearStepper() {
               {getStepContent(activeStep)}
             </Typography>
             <div>
-            {isStepOptional(activeStep) && (
-              <Button
-                disabled={activeStep === 0}
-                onClick={handleBack}
-                className={`${classes.button}`}
-              >
-                Back
-              </Button>
+              {isStepOptional(activeStep) && (
+                <Button
+                  disabled={activeStep === 0}
+                  onClick={handleBack}
+                  className={`${classes.button}`}
+                >
+                  Back
+                </Button>
               )}
 
               {isStepOptional(activeStep) && (

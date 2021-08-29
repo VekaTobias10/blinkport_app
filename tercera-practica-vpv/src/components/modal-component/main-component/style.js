@@ -7,6 +7,7 @@ export const useStyles = makeStyles((theme) => ({
         margin: "auto",
         [theme.breakpoints.down('sm')]: {
          marginTop: '0.6rem',
+         width: "fit-content",
         }
     },
     button: {
@@ -14,7 +15,12 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: "#BBDEFB",
         color: "white",
         width: '29%',
-        marginLeft: '12rem'
+        marginLeft: '12rem',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: '1rem',
+            marginTop:"10rem",
+            width: '90%',
+        },
     },
     btnSkip: {
         display: 'none'
