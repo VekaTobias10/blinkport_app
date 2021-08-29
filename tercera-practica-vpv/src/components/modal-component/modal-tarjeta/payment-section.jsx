@@ -7,9 +7,9 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import CreditCardIcon from "@material-ui/icons/CreditCard";
-import PaymentCard from "./tarjeta";
 import eps from "../../../assets/img/eps.png";
 import giropay from "../../../assets/img/giropay.png";
+import PaymentCard from "./tarjeta";
 import "./styles.css";
 
 function TabPanel(props) {
@@ -63,25 +63,33 @@ export default function PaymentOptions() {
   return (
     <div className="personal-data_bigcontainer">
       <div className={classes.root}>
-        <Paper elevation={2} variant="outlined" square className={classes.root}>
+        <Paper elevation={2} square className={classes.root}>
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="simple tabs"
+            className="myTabs"
             /*indicatorColor="terceary"
           textColor="primary"*/
             centered
             variant="fullWidth"
           >
-            <Tab icon={<CreditCardIcon />} label="Card" {...a11yProps(0)} />
             <Tab
-              icon={<img src={eps} alt="icono" />}
+              icon={<CreditCardIcon />}
+              label="Card"
+              className="myTab"
+              {...a11yProps(0)}
+            />
+            <Tab
+              icon={<img src={eps} alt="EPS Icon" />}
               label="EPS"
+              className="myTab"
               {...a11yProps(1)}
             />
             <Tab
-              icon={<img src={giropay} alt="icono" />}
+              icon={<img src={giropay} alt="Giropay Icon" />}
               label="Giropay"
+              className="myTab"
               {...a11yProps(2)}
             />
             <Tab label="..." {...a11yProps(3)} />

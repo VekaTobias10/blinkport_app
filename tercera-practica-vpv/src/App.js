@@ -18,18 +18,18 @@ function App() {
     <React.Fragment>
       <Router>
         <Switch>
-      <Route path='/login'>
-         <RegisterData></RegisterData>
-      </Route>
-      
-      <Route path='/register'>
-      <ModalPage></ModalPage>
-      </Route> 
-      <Route path='*'> 
-     <LandingPage></LandingPage>
-      </Route>
-    </Switch>
-    </Router>
+          <Route path='/login'>
+            <RegisterData></RegisterData>
+          </Route>
+
+          <Route path='/register'>
+            <ModalPage></ModalPage>
+          </Route>
+          <Route path='*'>
+            <LandingPage></LandingPage>
+          </Route>
+        </Switch>
+      </Router>
     </React.Fragment>
 
   );
