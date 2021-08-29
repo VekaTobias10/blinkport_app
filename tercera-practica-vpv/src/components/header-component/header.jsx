@@ -1,6 +1,10 @@
 import "./styles.css";
 import logo from "../../assets/img/Logo.png";
+import { useHistory } from 'react-router-dom';
+
+
 function Header() {
+  const { push } = useHistory()
   return (
     <header>
       <nav className="navContainer">
@@ -13,7 +17,7 @@ function Header() {
           <li>CONTACT</li>
         </ul>
         <div>
-          <button className="accessBtn">ACCESS</button>
+          <button className="accessBtn" onClick={() => push('/login')}>ACCESS</button>
         </div>
       </nav>
     </header>
