@@ -71,7 +71,7 @@ export const useStyles = makeStyles({
         alignItems: 'center',
         fontStyle: 'normal',
         fontWeight: 'normal',
-        fontSize: '18.8929px',
+        fontSize: '1.2rem',
         lineHeight: '28px',
         letterSpacing: '0.177121px',
         color: '#000000',
