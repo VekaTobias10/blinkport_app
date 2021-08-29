@@ -19,7 +19,29 @@ export const useStyles = makeStyles((theme) => ({
     },
     checkBoxElement: {
         padding: "0.25rem"
-    }
+    },
+    personalDataBigcontainer:{
+        display: "flex",
+        justifyContent: "space-evenly",
+        width: "85%",
+        margin: "2rem auto",
+        [theme.breakpoints.down('sm')]: {
+            width:"fit-content",
+        }
+    },
+    imgContainerPersonal:{
+        [theme.breakpoints.down('sm')]: {
+            display:"none",
+        }
+    },
+    personalDataInputTitelcontainer:{
+        width: "25.56rem",
+        maxHeight: "18.75rem",
+        marginRight: "3.12rem",
+        [theme.breakpoints.down('sm')]: {
+            width:"fit-content",
+        }
+    },
 
 }));
 
