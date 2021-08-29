@@ -1,16 +1,11 @@
 import logo from "../../assets/img/Logo.png";
-
+import { useHistory } from 'react-router-dom';
 import { useStyles } from "./style.js";
 
 
 
 export default function Header() {
   const classes = useStyles();
-
-import { useHistory } from 'react-router-dom';
-
-
-function Header() {
   const { push } = useHistory()
 
   return (
