@@ -72,6 +72,14 @@ viewIcon:{
     borderRadius: '15px',
     fontSize: '2rem',
 }    
-}
+},
+navButton:{
+  display:"none",
+  [theme.breakpoints.down('sm')]: {
+    display:"block",
+    border:"none",
+    background:"transparent",
+  },
+},
 
 }));

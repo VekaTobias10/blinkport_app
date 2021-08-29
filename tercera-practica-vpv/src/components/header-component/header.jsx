@@ -25,7 +25,9 @@ export default function Header() {
         </ul>
         <div>
           <button className={classes.accessBtn} onClick={() => push('/login')}>ACCESS</button>
+          <button className={classes.navButton} onClick={() => push('/login')}>
           <ViewHeadlineOutlinedIcon className={classes.viewIcon}></ViewHeadlineOutlinedIcon>
+          </button>
         </div>
       </nav>
     </header>
