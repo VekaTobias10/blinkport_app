@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { useStyles } from "./style.js";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
@@ -10,29 +10,11 @@ import PersonalData from "../personal-data";
 import PaymentOptions from "../modal-tarjeta/payment-section";
 import LastPageModal from "../finalmodalpage-component";
 import LandingPage from "../../../pages/landing";
+import logo from "../../../assets/img/Logo.png";
+import ViewHeadlineOutlinedIcon from '@material-ui/icons/ViewHeadlineOutlined';
 import { useHistory } from 'react-router-dom';
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "50%",
-    margin: "auto",
-  },
-  button: {
-    marginRight: theme.spacing(1),
-    backgroundColor: "#BBDEFB",
-    color: "white",
-    width: '29%',
-    marginLeft: '12rem'
-  },
-  btnSkip:{
-    display:'none'
-  },
-  instructions: {
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(1),
-  },
-}));
 
 function getSteps() {
   return ["Personal Data", "Subscription Plan", "Payment details"];
@@ -103,6 +85,20 @@ export default function HorizontalLinearStepper() {
   return (
 
     <React.Fragment>
+       <nav className={`${classes.navContainerModal} ${classes.navContainerModalTwo}`}>
+        <div>
+          <img src={logo} className={classes.webLogoModal} alt="logo" />
+        </div>
+        <ul className={classes.servicesBarModal}>
+          <li className={classes.liModal}>SERVICES</li>
+          <li className={classes.liModal}>ABOUT</li>
+          <li className={classes.liModal}>CONTACT</li>
+        </ul>
+        <div>
+          <button className={classes.accessBtnModal}>ACCESS</button>
+          <ViewHeadlineOutlinedIcon className={classes.viewIcon}></ViewHeadlineOutlinedIcon>
+        </div>
+      </nav>
       <div className={classes.root}>
         <Stepper activeStep={activeStep}>
           {steps.map((label, index) => {

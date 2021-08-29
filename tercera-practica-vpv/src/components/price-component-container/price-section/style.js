@@ -14,7 +14,6 @@ export const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         [theme.breakpoints.down('sm')]: {
             padding: '0.8rem',
-            fontSize: '1.5rem',
         }
     },
     title: {
