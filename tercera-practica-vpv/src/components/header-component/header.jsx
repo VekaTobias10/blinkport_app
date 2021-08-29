@@ -1,17 +1,12 @@
 import logo from "../../assets/img/Logo.png";
-
+import { useHistory } from 'react-router-dom';
 import { useStyles } from "./style.js";
-
+import ViewHeadlineOutlinedIcon from '@material-ui/icons/ViewHeadlineOutlined';
 
 
 export default function Header() {
   const classes = useStyles();
-
-import { useHistory } from 'react-router-dom';
-
-
-function Header() {
-  const { push } = useHistory()
+ const { push } = useHistory()
 
   return (
     <header>
@@ -26,9 +21,9 @@ function Header() {
         </ul>
         <div>
           <button className={classes.accessBtn} onClick={() => push('/login')}>ACCESS</button>
+          <ViewHeadlineOutlinedIcon className={classes.viewIcon}></ViewHeadlineOutlinedIcon>
         </div>
       </nav>
     </header>
   );
 }
-

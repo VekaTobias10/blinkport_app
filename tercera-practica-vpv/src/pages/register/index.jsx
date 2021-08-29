@@ -5,6 +5,8 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 import './style.css';
 import { useHistory } from 'react-router-dom';
+import logo from "../../assets/img/Logo.png";
+import ViewHeadlineOutlinedIcon from '@material-ui/icons/ViewHeadlineOutlined';
 
 
 function RegisterData() {
@@ -16,6 +18,21 @@ function RegisterData() {
     };
 
     return (
+        <React.Fragment>
+        <nav className={`${classes.navContainerModal} ${classes.navContainerModalTwo}`}>
+        <div>
+          <img src={logo} className={classes.webLogoModal} alt="logo" />
+        </div>
+        <ul className={classes.servicesBarModal}>
+          <li className={classes.liModal}>SERVICES</li>
+          <li className={classes.liModal}>ABOUT</li>
+          <li className={classes.liModal}>CONTACT</li>
+        </ul>
+        <div>
+          <button className={classes.accessBtnModal}>ACCESS</button>
+          <ViewHeadlineOutlinedIcon className={classes.viewIcon}></ViewHeadlineOutlinedIcon>
+        </div>
+      </nav>
         <div className={classes.pageContainer}>
             <div className={classes.accountContainer}>
 
@@ -45,7 +62,7 @@ function RegisterData() {
                     </div>
                     <Button className={classes.buttonlogin} variant="contained" onClick={() => push('/')} >LOGIN</Button>
                     <div className="link_container">
-                        <p className="link"><a className="link_color" href="">Forgot password?</a></p>
+                        <p className="link"><a className="link_color" href='#'>Forgot password?</a></p>
                         <p className="link"><a className="link_color" href="">Don´t have an account? Sing Up</a></p>
 
                     </div>
@@ -59,6 +76,7 @@ function RegisterData() {
                 <p className="link"><a className="link_color" href="">Do you want to see our plans before?</a></p>
             </div>
         </div>
+        </React.Fragment>
     )
 }
 export default RegisterData;

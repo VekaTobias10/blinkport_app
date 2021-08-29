@@ -40,6 +40,16 @@ export const useStyles = makeStyles((theme) => ({
         flexGrow: 0,
         margin: '0px 8px',
     },
+    subtitle_cont_card:{
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '2.40rem',
+        }
+    },
+    subtitle_desc_card:{
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.5rem',
+        }
+    }
 
     
 }));

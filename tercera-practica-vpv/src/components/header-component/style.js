@@ -15,6 +15,12 @@ navContainer: {
   background: '#ffffff',
   boxShadow: '0px 2px 12px rgba(0, 0, 0, 0.08)',
   top: '0px',
+  [theme.breakpoints.down('sm')]: {
+    display: 'flex',
+    boxShadow: '0px 2px 12px rgba(0, 0, 0, 0.08)',
+    padding: '0.5rem',
+    alignItems : 'center',
+}
 },
 
 webLogo: {
@@ -34,6 +40,9 @@ accessBtn: {
   top: 'calc(50% - 34px / 2)',
   boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
   borderRadius: '20px',
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
+}
 },
 
 servicesBar: {
@@ -50,6 +59,19 @@ servicesBar: {
 
 li: {
   margin: '0px 8px',
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
+}
 },
+
+viewIcon:{
+  display:'none',
+  [theme.breakpoints.down('sm')]: {
+    display:'block',
+    color: '#757575',
+    borderRadius: '15px',
+    fontSize: '2rem',
+}    
+}
 
 }));
