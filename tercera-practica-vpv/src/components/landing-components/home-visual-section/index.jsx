@@ -2,10 +2,12 @@ import "./styles.css";
 import React from "react";
 import InfoCards from "../../info-cards";
 import TitleOfSections from "../../titles/title";
-import { LocationOn, DateRange, PeopleAlt } from "@material-ui/icons";
-import { TextField } from "@material-ui/core";
+import { LocationOn, DateRange, PeopleAlt, Search } from "@material-ui/icons";
+import { TextField, Button } from "@material-ui/core";
+import useStyles from "./styles.js";
 
 function ImageSection() {
+  const classes = useStyles();
   return (
     <React.Fragment>
       <div className="img row">
@@ -14,32 +16,54 @@ function ImageSection() {
           <h1>Teleport To Beautiful Places</h1>
         </div>
         <div className="reservation-container">
-          <div>
-            <LocationOn></LocationOn>
-            <p>Where</p>
-            <TextField id="standard-basic" label="Where do you want to go" />
-          </div>
-          <div>
-            <DateRange></DateRange>
-            <p>When</p>
-          </div>
-          <div>
-            <PeopleAlt></PeopleAlt>
-            <p>Who</p>
+          <div className="reservation-little-containers">
+            <LocationOn className={classes.icon}></LocationOn>
+            <p className="reservation-little-title">Where</p>
             <TextField
+              size="small"
+              className={classes.input}
+              id="standard-basic"
+              placeholder="Where do you want to go"
+            />
+          </div>
+          <div className="reservation-little-containers">
+            <DateRange className={classes.icon}></DateRange>
+            <p className="reservation-little-title">When</p>
+            <TextField
+              className={classes.input}
+              required
+              id="travel-date"
+              placeholder="Choose date"
+              type="date"
+              min="2021-08-01"
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+          </div>
+          <div className="reservation-little-containers noBorder">
+            <PeopleAlt className={classes.icon}></PeopleAlt>
+            <p className="reservation-little-title">Who</p>
+            <TextField
+              size="small"
+              className={classes.input}
               id="outlined-number"
-              label="Number"
               type="number"
               InputLabelProps={{
                 shrink: true,
               }}
-              variant="outlined"
             ></TextField>
           </div>
+          <Button className={classes.button}>
+            <Search />
+          </Button>
         </div>
       </div>
       {/* <div className="row"> */}
-      <TitleOfSections></TitleOfSections>
+      <TitleOfSections
+        title="From A to B in 0"
+        text="Travel wherever, whenever, whoever with. In seconds."
+      ></TitleOfSections>
       <InfoCards></InfoCards>
       {/* </div> */}
     </React.Fragment>

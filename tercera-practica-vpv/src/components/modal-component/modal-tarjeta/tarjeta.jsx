@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { InputLabel, TextField, MenuItem } from "@material-ui/core/";
+//import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
+import TextField from "@material-ui/core/TextField";
 import { useStyles } from "./styles.js";
 import banks from "../../../assets/img/banks.png";
 
@@ -19,14 +21,13 @@ export default function PaymentCard() {
           id="outlined-full-width"
           label="Creadit Card"
           style={{
-            margin: 0,
             backgroundImage: `url(${banks})`,
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "95% center",
-
-            marginBottom: 30,
+            backgroundPosition: "98% center",
+            margin: "1rem 0px",
           }}
           placeholder="XXXX XXXX XX XXXXXXXXXX"
+          helperText=""
           fullWidth
           required
           margin="normal"
@@ -43,6 +44,7 @@ export default function PaymentCard() {
             id="expire-date"
             label="Date of expiration"
             placeholder="YYYY-MM"
+            /*defaultValue="2021-08"*/
             type="month"
             min="2021-08"
             InputLabelProps={{
@@ -57,19 +59,19 @@ export default function PaymentCard() {
             variant="outlined"
           />
         </div>
+        {/*<InputLabel id="demo-simple-select-outlined-label">Country</InputLabel>*/}
         <div className="formInputs">
           <Select
             labelId="country"
             id="country"
+            className="selClass"
             value={country}
             onChange={handleChange}
-            label="Select a country"
-            className="selectClass"
             variant="outlined"
+            placeholder="Select a country"
+            label="Select a country"
           >
-            <MenuItem value="" select="selected">
-              Select a country
-            </MenuItem>
+            <MenuItem value="">Select a country</MenuItem>
             <MenuItem value={"Spain"}>Spain</MenuItem>
             <MenuItem value={"USA"}>United States of America</MenuItem>
             <MenuItem value={"Mexico"}>Mexico</MenuItem>

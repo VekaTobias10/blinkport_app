@@ -42,9 +42,9 @@
 .reservation-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 13px 100px;
+  padding: 1rem 80px;
   position: absolute;
   width: 780px;
   height: 96px;
@@ -55,7 +55,29 @@
   box-shadow: 2px 2px 30px rgba(83, 83, 83, 0.08);
   border-radius: 20px;
 }
+.reservation-little-containers {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr; */
+  grid-template-areas:
+    "icon title title title"
+    "icon input input input";
+  grid-gap: 0.3rem;
+  align-items: center;
+  border-right: solid black 1px;
+}
+.noBorder {
+  border: 0px;
+}
 
+.reservation-little-title {
+  grid-area: title;
+  margin: 0px;
+}
+
+.reservation-little-containers input {
+  font-size: 0.8rem;
+}
 /* .row {
   margin: 0 auto;
   width: 100%;
