@@ -1,11 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     icon: {
         fontSize: "2rem",
         gridArea: "icon",
         color: "grey",
-        marginLeft: "0.8rem"
+        marginLeft: "0.8rem",
     },
     input: {
         gridArea: "input",
@@ -22,7 +22,8 @@ const useStyles = makeStyles({
         maxWidth: "3rem",
     },
 
-});
+
+}));
 
 export default useStyles;
 
