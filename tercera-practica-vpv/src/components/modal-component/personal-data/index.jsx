@@ -30,6 +30,23 @@ function PersonalData() {
       email: e.target[10].value,
       password: e.target[12].value,
     };
+    const options = {
+      method: "POST",
+      body: JSON.stringify(user),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    console.log(user);
+
+    fetch("http://localhost:5055/user/register", options)
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((error) => {
+        console.log(error);
+      });
+
     console.log(user);
   };
 
