@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 const URL =
   "mongodb+srv://vir_994:@firstddbb.sjoeu.mongodb.net";
 
-export const createUser = async (user) => {
+  export const createUser = async (user) => {
 
 
   const client = await MongoClient.connect(URL);
