@@ -1,6 +1,6 @@
 import express from "express";
-import routerLogin from "./login/login.router.js";
-import routerUser from './user/user.router.js'
+import routerLogin from "./src/login/login.router.js";
+import routerUser from './src/user/user.router.js';
 const port = 5055;
 
 const app = express();
