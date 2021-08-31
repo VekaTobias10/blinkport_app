@@ -128,7 +128,7 @@ function PersonalData() {
               autoComplete="current-password"
               variant="outlined"
             />
-            <input type="submit" value="Submit your info!"></input>
+            <input type="submit" value="" className={classes.inputOculto}></input>
           </form>
         </div>
         <div className="check-box">

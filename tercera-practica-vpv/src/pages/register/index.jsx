@@ -63,16 +63,16 @@ function RegisterData() {
                     <Button className={classes.buttonlogin} variant="contained" onClick={() => push('/')} >LOGIN</Button>
                     <div className="link_container">
                         <p className="link"><a className="link_color" href='#'>Forgot password?</a></p>
-                        <p className="link"><a className="link_color" href="">Don´t have an account? Sing Up</a></p>
+                        <p className="link"><a className="link_color" href="">Don´t have an account? Sign Up</a></p>
 
                     </div>
                 </form>
 
             </div>
             <div className={classes.singupContainer}>
-                <h5 className={classes.singupTitle}>Sing Up</h5>
+                <h5 className={classes.singupTitle}>Sign Up</h5>
                 <p className={classes.singupParagraph}>Book your teleports faster, pay with Bitcoin and get rewards for being a subscriber to the Business Plan.</p>
-                <Button className={classes.buttonlogin} variant="contained" onClick={() => push('/register')} >SING UP</Button>
+                <Button className={classes.buttonlogin} variant="contained" onClick={() => push('/register')} >SIGN UP</Button>
                 <p className="link"><a className="link_color" href="">Do you want to see our plans before?</a></p>
             </div>
         </div>

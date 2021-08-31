@@ -42,6 +42,10 @@ export const useStyles = makeStyles((theme) => ({
             width:"fit-content",
         }
     },
+    inputOculto:{
+        border:"none",
+        color:"transparent",
+    }
 
 }));
 

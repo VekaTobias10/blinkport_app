@@ -1,5 +1,5 @@
-.img {
-  background-image: url("../../../assets/img/header\ image.png");
+.imgRow {
+  background-image: url("../../../assets/img/header-image.png");
   background-position: center;
   background-size: cover;
   min-height: 553px;

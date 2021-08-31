@@ -10,13 +10,13 @@ function ImageSection() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <div className="img row">
-        <div className="text-img">
-          <p>All you need is Blinkport</p>
-          <h1>Teleport To Beautiful Places</h1>
+      <div className={classes.imgRow}>
+        <div className={classes.textImg}>
+          <p className={classes.textImgP}>All you need is Blinkport</p>
+          <h1 className={classes.textImgH1}>Teleport To Beautiful Places</h1>
         </div>
-        <div className="reservation-container">
-          <div className="reservation-little-containers">
+        <div className={classes.reservationContainer}>
+          <div className={classes.reservationLittleContainers}>
             <LocationOn className={classes.icon}></LocationOn>
             <p className="reservation-little-title">Where</p>
             <TextField
@@ -26,7 +26,7 @@ function ImageSection() {
               placeholder="Where do you want to go"
             />
           </div>
-          <div className="reservation-little-containers">
+          <div className={classes.reservationLittleContainers}>
             <DateRange className={classes.icon}></DateRange>
             <p className="reservation-little-title">When</p>
             <TextField
