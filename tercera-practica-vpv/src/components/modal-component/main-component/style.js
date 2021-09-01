@@ -5,6 +5,7 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         width: "50%",
         margin: "auto",
+        color:"#BBDEFB",
         [theme.breakpoints.down('sm')]: {
             marginTop: '0.6rem',
             width: "fit-content",
